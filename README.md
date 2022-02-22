@@ -39,7 +39,7 @@ To delete the environment run `jupyterenvd_del` in your project folder.
 
 ### Jupyter (JupyterLab)
 
-For (Jupyter)[https://jupyter.org/] run
+For [Jupyter](https://jupyter.org/) run
 
 ```shell
 jupyter
