@@ -37,6 +37,20 @@ The current directory is mounted into the container.
 
 To delete the environment run `jupyterenvd_del` in your project folder.
 
+### Jupyter (JupyterLab)
+
+For (Jupyter)[https://jupyter.org/] run
+
+```shell
+jupyter
+```
+
+This uses the [`datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
+
+The current directory is mounted into the container.
+
+If you want to install dependencies, you should use the Jupyter environment\_.
+
 ### Jupyter environment
 
 In order to create a new or use an existing Jupyter environment, run the following command in your _project folder_:
@@ -50,6 +64,8 @@ or shorter
 ```shell
 jed
 ```
+
+This uses the [`datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
 
 The current directory is mounted into the container.
 
