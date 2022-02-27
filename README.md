@@ -1,6 +1,11 @@
 # Dockerize DataScience
 
+> Bring your Data Science tasks to Docker! :whale:
+
+[![Medium article: Dockerize DataScience](https://img.shields.io/badge/Medium%20article-How%20to%20Dockerize%20DataScience-black)](https://medium.com/)
 [![GitHub license](https://img.shields.io/github/license/FranzDiebold/dockerize-datascience)](./LICENSE)
+
+This is the code repository for the accompanying Medium article [_"How to Dockerize DataScience"_](https://medium.com/).
 
 ## Installation
 
