@@ -1,4 +1,4 @@
-# Dockerize DataScience
+# Dockerize Data Science
 
 > Bring your Data Science tasks to Docker! :whale:
 
