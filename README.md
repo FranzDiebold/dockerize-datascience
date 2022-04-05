@@ -2,12 +2,16 @@
 
 > Bring your Data Science tasks to Docker! :whale:
 
-[![Medium article: Dockerize DataScience](https://img.shields.io/badge/Medium%20article-How%20to%20Dockerize%20DataScience-black)](https://medium.com/)
+[![Medium article: How to dockerize Data Science](https://img.shields.io/badge/Medium%20article-How%20to%20dockerize%20python%20environments-black)](https://franzdiebold.medium.com/how-to-dockerize-python-environments-ce8d2ce7bf32)
+[![Medium article: How to dockerize Data Science](https://img.shields.io/badge/Medium%20article-How%20to%20dockerize%20Data%20Science-black)](https://franzdiebold.medium.com/how-to-dockerize-data-science-dd396962a0f)
 [![GitHub license](https://img.shields.io/github/license/FranzDiebold/dockerize-datascience)](./LICENSE)
 
 !["Docker, Docker everywhere" meme](img/docker-everywhere-meme.jpg)
 
-This is the code repository for the accompanying Medium article [_"How to Dockerize DataScience"_](https://medium.com/).
+This is the code repository for the accompanying Medium article series _"How to dockerize [x]"_:
+
+- [_"How to dockerize Python environments"_](https://franzdiebold.medium.com/how-to-dockerize-python-environments-ce8d2ce7bf32)
+- [_"How to dockerize Data Science"_](https://franzdiebold.medium.com/how-to-dockerize-data-science-dd396962a0f)
 
 ## Installation
 
