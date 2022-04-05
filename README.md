@@ -56,7 +56,7 @@ This uses the [`datascience-ultimate`](https://github.com/FranzDiebold/docker-da
 
 The current directory is mounted into the container.
 
-If you want to install dependencies, you should use the Jupyter environment\_.
+If you want to install dependencies, you should use the Jupyter environment.
 
 ### Jupyter environment
 
