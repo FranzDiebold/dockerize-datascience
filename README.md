@@ -42,7 +42,7 @@ In order to create a new or use an existing Python environment, run one of the f
 
 The current directory is mounted into the container.
 
-To delete the environment run `jupyterenvd_del` in your project folder.
+To delete the environment run `pyenvd_del` in your project folder.
 
 ### Jupyter (JupyterLab)
 
