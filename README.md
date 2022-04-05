@@ -46,6 +46,8 @@ To delete the environment run `pyenvd_del` in your project folder.
 
 ### Jupyter (JupyterLab)
 
+!["Dockerizing Data Science" meme](img/dockerizing-data-science-meme.jpg)
+
 For [Jupyter](https://jupyter.org/) run
 
 ```shell
