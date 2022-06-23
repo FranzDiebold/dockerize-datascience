@@ -4,6 +4,7 @@ alias python3.10='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app p
 alias python='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:latest python'
 
 alias jupyter='docker run --rm -p 8888:8888 -p 4040:4040 -v "${PWD}":/home/jovyan franzdiebold/datascience-ultimate:latest'
+alias jupyter-server='docker run --rm -p 8888:8888 -p 4040:4040 -v "${PWD}":/home/jovyan franzdiebold/datascience-ultimate-server:latest'
 
 # PyEnvD: Python environment dockerized
 slugify() {
@@ -40,4 +41,15 @@ alias je=jupyter-env
 
 jupyter-env-del() {
     docker volume rm "$(env_name $1)_jupyter"
+}
+
+jupyter-server-env() {
+    local working_directory="/usr/src/$(basename ${PWD})"
+    local ssh_directory="${HOME}/.ssh"
+    docker run --rm -p 8888:8888 -p 4040:4040 -v "$(env_name $1)_jupyter-server":/opt/conda/lib/python3.9/site-packages -v "${PWD}":"$working_directory" -v $ssh_directory:/home/jovyan/.ssh -w $working_directory franzdiebold/datascience-ultimate-server:latest
+}
+alias jes=jupyter-server-env
+
+jupyter-server-env-del() {
+    docker volume rm "$(env_name $1)_jupyter-server"
 }

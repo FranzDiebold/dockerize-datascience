@@ -109,11 +109,11 @@ jupyter-server-env
 or shorter
 
 ```shell
-jed
+jes
 ```
 
-This uses the [`datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
+This uses the [`franzdiebold/datascience-ultimate-server`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
 
 The current directory is mounted into the container.
 
-To delete the environment run `jupyterenvd_del`.
+To delete the environment run `jupyter-server-env-del`.
