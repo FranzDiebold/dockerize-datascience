@@ -14,30 +14,30 @@ env_name() {
     echo $(slugify ${${1:-$PWD}: -200})
 }
 
-pyenvd3.8() {
+py-env-3.8() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:3.8 bash
 }
-pyenvd3.9() {
+py-env-3.9() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:3.9 bash
 }
-pyenvd3.10() {
+py-env-3.10() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:3.10 bash
 }
-pyenvd() {
+py-env() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:latest bash
 }
 
-pyenvd_del() {
+py-env-del() {
     docker volume rm "$(env_name $1)_python"
 }
 
-jupyterenvd() {
+jupyter-env() {
     local working_directory="/usr/src/$(basename ${PWD})"
     local ssh_directory="${HOME}/.ssh"
     docker run --rm -p 8888:8888 -p 4040:4040 -v "$(env_name $1)_jupyter":/opt/conda/lib/python3.9/site-packages -v "${PWD}":"$working_directory" -v $ssh_directory:/home/jovyan/.ssh -w $working_directory franzdiebold/datascience-ultimate:latest
 }
-alias jed=jupyterenvd
+alias je=jupyter-env
 
-jupyterenvd_del() {
+jupyter-env-del() {
     docker volume rm "$(env_name $1)_jupyter"
 }

@@ -37,16 +37,16 @@ If you want to install dependencies, you should use the _Python environment_.
 
 In order to create a new or use an existing Python environment, run one of the following commands in your _project folder_:
 
-| Python version | Command      |
-| -------------: | ------------ |
-|            3.8 | `pyenvd3.8`  |
-|            3.9 | `pyenvd3.9`  |
-|           3.10 | `pyenvd3.10` |
-|         latest | `pyenvd`     |
+| Python version | Command       |
+| -------------: | ------------- |
+|            3.8 | `py-env-3.8`  |
+|            3.9 | `py-env-3.9`  |
+|           3.10 | `py-env-3.10` |
+|         latest | `py-env`      |
 
 The current directory is mounted into the container.
 
-To delete the environment run `pyenvd_del` in your project folder.
+To delete the environment run `py-env-del` in your project folder.
 
 ### Jupyter (JupyterLab)
 
@@ -58,18 +58,52 @@ For [Jupyter](https://jupyter.org/) run
 jupyter
 ```
 
-This uses the [`datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
+This uses the [`franzdiebold/datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
 
 The current directory is mounted into the container.
 
-If you want to install dependencies, you should use the Jupyter environment.
+If you want to install dependencies, you should use the [Jupyter environment](#jupyter-environment).
 
 ### Jupyter environment
 
 In order to create a new or use an existing Jupyter environment, run the following command in your _project folder_:
 
 ```shell
-jupyterenvd
+jupyter-env
+```
+
+or shorter
+
+```shell
+je
+```
+
+This uses the [`franzdiebold/datascience-ultimate`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
+
+The current directory is mounted into the container.
+
+To delete the environment run `jupyter-env-del`.
+
+### Jupyter Server
+
+For [Jupyter Server](https://jupyter.org/) run
+
+```shell
+jupyter-server
+```
+
+This uses the [`franzdiebold/datascience-ultimate-server`](https://github.com/FranzDiebold/docker-datascience-ultimate) Docker image.
+
+The current directory is mounted into the container.
+
+If you want to install dependencies, you should use the [Jupyter Server environment](#jupyter-server-environment).
+
+### Jupyter Server environment
+
+In order to create a new or use an existing Jupyter Server environment, run the following command in your _project folder_:
+
+```shell
+jupyter-server-env
 ```
 
 or shorter
