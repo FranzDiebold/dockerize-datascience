@@ -52,7 +52,7 @@ To delete the environment run `py-env-del` in your project folder.
 
 !["Dockerizing Data Science" meme](img/dockerizing-data-science-meme.jpg)
 
-For [Jupyter](https://jupyter.org/) run
+For [Jupyter](https://jupyter.org/) (to use in the browser) run
 
 ```shell
 jupyter
@@ -86,7 +86,7 @@ To delete the environment run `jupyter-env-del`.
 
 ### Jupyter Server
 
-For [Jupyter Server](https://jupyter.org/) run
+For [Jupyter Server](https://jupyter.org/) (to use with a different client software for your notebooks such as [JetBrains DataSpell](https://www.jetbrains.com/dataspell/)) run
 
 ```shell
 jupyter-server
