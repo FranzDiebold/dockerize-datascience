@@ -84,6 +84,8 @@ The current directory is mounted into the container.
 
 To delete the environment run `jupyter-env-del`.
 
+---
+
 ### Jupyter Server
 
 For [Jupyter Server](https://jupyter.org/) (to use with a different client software for your notebooks such as [JetBrains DataSpell](https://www.jetbrains.com/dataspell/)) run
