@@ -1,6 +1,7 @@
 alias python3.8='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:3.8 python'
 alias python3.9='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:3.9 python'
 alias python3.10='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:3.10 python'
+alias python3.11='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:3.11 python'
 alias python='docker run --rm -it -v "${PWD}":/usr/src/app -w /usr/src/app python:latest python'
 
 alias jupyter='docker run --rm -p 8888:8888 -p 4040:4040 -v "${PWD}":/home/jovyan franzdiebold/datascience-ultimate:latest'
@@ -23,6 +24,9 @@ py-env-3.9() {
 }
 py-env-3.10() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:3.10 bash
+}
+py-env-3.11() {
+    docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:3.11 bash
 }
 py-env() {
     docker run --rm -it -v "$(env_name $1)_python":/usr/local/lib -v "${PWD}":/usr/src/app -w /usr/src/app python:latest bash

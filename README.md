@@ -28,6 +28,7 @@ Choose your Python version:
 |            3.8 | `python3.8`  |
 |            3.9 | `python3.9`  |
 |           3.10 | `python3.10` |
+|           3.11 | `python3.11` |
 |         latest | `python`     |
 
 This will run your python script or your interactive Python session in a _Docker container_. The current directory is mounted into the container.
@@ -42,6 +43,7 @@ In order to create a new or use an existing Python environment, run one of the f
 |            3.8 | `py-env-3.8`  |
 |            3.9 | `py-env-3.9`  |
 |           3.10 | `py-env-3.10` |
+|           3.11 | `py-env-3.11` |
 |         latest | `py-env`      |
 
 The current directory is mounted into the container.
